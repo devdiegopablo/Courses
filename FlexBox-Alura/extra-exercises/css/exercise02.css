@@ -1,0 +1,13 @@
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .course {
+    background-color: blueviolet;
+    color: white;
+    height: 100px;
+    margin: 1%;
+    text-align: center;
+    width: 31.3%;
+  }

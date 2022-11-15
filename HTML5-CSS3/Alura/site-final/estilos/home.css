@@ -1,0 +1,113 @@
+/*estilo do banner*/
+
+#banner {
+    width: 100%;
+}
+
+/*Estilo do main da página home*/
+.titulo-principal {
+	text-align: center;
+	font-size: 2em;
+	margin: 0 0 1em;
+	clear: left;
+}
+
+.principal {
+	padding: 3em 0;
+	width: 940px;
+	margin: 0 auto;
+	background-color: #FDFDFD;
+}
+
+.principal p {
+	margin: 0 0 1em;
+	text-align: justify;
+}
+
+.principal strong {
+	font-weight: bold;
+}
+
+.principal em {
+	font-style: italic;
+}
+
+.imagem-sobre {
+	width: 12%;
+	float: left;
+	margin: 0 20px 20px 0;
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FDFDFD, #CCCCCC 25%, #999999);
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+
+.mapa-frame {
+	width: 940px;
+	margin: 0 auto;
+	box-shadow: 10px 10px 10px #000000;
+}
+
+.beneficios {
+	padding: 3em 0;
+	background-color: #999999
+}
+
+.conteudo-beneficios {
+	width: 780px;
+	margin: 0 auto;
+}
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.itens {
+	line-height: 1.5em;
+}
+
+.itens:before {
+	content: "\2702  ";
+}
+
+.itens:first-child {
+	font-weight: bold;
+}
+
+.imagem-beneficios {
+	width: 60%;
+	box-shadow: 10px 10px 10px #000000;
+	transition: opacity 0.5s;
+}
+
+.imagem-beneficios:hover {
+	opacity: 0.5;
+}
+
+.video {
+	width: 780px;
+	margin: 2em auto;
+	box-shadow: 10px 10px 10px #000000;
+}
+/*Estilo sendo adpatado para smartphones e tablets*/
+@media screen and (max-width: 940px) {
+	.principal, .mapa-frame, .conteudo-beneficios, .video {
+		width: auto;
+		margin: 0 1em;
+	}
+	.titulo-principal {
+		font-size: 1.5em;
+	}
+
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%;
+		margin: 1em 0;
+	}
+}

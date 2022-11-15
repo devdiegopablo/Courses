@@ -1,0 +1,48 @@
+.cabecalho {
+    background-image: linear-gradient(to bottom, #3DDB84, #154B2D);
+    padding: 20px 0 10px 0;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.500);
+}
+
+.titulo-principal {
+    text-align: center;
+    color:white;
+    font-family: 'Bebas Neue', Arial;
+    font-size: 3em;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.500) ;
+    margin-top: 10px;
+}
+
+.subtitulo {
+    text-align: center;
+    color:white;
+    font-weight: normal;
+    width: 40%;
+    margin: auto;
+}
+
+.menu-lista {
+    list-style: none;
+    padding-left: 20px;
+    margin: 60px 0  0;
+}
+
+.menu-items {
+    display: inline;
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 1.3em;
+    transition: 0.5s background-color;
+}
+
+.menu-items:hover {
+    background-color:#279558;
+    border-radius: 5px;
+}
+
+.menu-links {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}

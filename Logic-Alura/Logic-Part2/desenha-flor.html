@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    function desenhaRetangulo(x, y, w, h, cor){ //x= posição horizontal, y= posição vertical, w= largura, h=altura
+        pincel.fillStyle= cor;
+        pincel.fillRect(x, y, w, h);
+        pincel.strokeStyle= "black";
+        pincel.strokeRect(x, y, w, h);
+
+    }
+    function desenhaCirculo(x, y, raio, cor){//x e y são posições iniciais do círculo
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2*3.14);  //O número 0 é o ângulo inicial
+        pincel.fill();
+    }
+
+    function desenhaFlor(x, y){
+        desenhaCirculo(x, y, 25, "red");
+        desenhaCirculo(x-50, y, 25, "orange");
+        desenhaCirculo(x+50, y, 25, "black");
+        desenhaCirculo(x, y-50, 25, "yellow");
+        desenhaCirculo(x, y+50, 25, "blue");
+    }
+    
+    const tela = document.querySelector('canvas');
+    const pincel = tela.getContext('2d');
+
+    desenhaRetangulo(0, 0, 600, 400, "lightgrey");
+    desenhaFlor(150, 200);
+    desenhaFlor(450, 200);
+
+</script>

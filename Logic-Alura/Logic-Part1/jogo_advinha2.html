@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jogo dos chutes</title>
+		<meta charset="utf-8">
+        <style>
+        
+            body{
+                text-align: center;
+                background-color: dimgrey;
+                color: aliceblue;
+            }
+        
+        </style>
+	</head>
+	<body>
+		<h3>Jogo de adinhação</h3>
+        <p>Chuta um número de 1 até 10 para saber qual estou pensando.</p>
+        <p>Digite o número no quadro abaixo:</p>
+        <input>&nbsp;&nbsp;<button>Verificar Número</button>
+	</body>
+	<script type="text/javascript">
+
+		function pulaLinha(){
+            
+            document.write("<br>");
+            
+        }
+        
+        function mostra(texto){
+
+			document.write(texto);
+
+		}
+        
+		function sorteia(numero){
+            return Math.round(Math.random()*numero);
+            if(numeroPensado==0){
+                numeroPensado++;
+            }
+        }
+        
+        function verificaNumero(){
+            if(numeroChutado.value<1 || numeroChutado.value>10){
+                alert("Valor inválido!");
+                numeroChutado.value = "";
+                numeroChutado.focus();
+            }else{
+                verificaSegredo();
+            }
+            
+        }
+        
+        function verificaSegredo(){
+            if(numeroChutado.value==numeroPensado){
+                alert("Parabéns! você acertou!");
+            }else{
+                alert("Que pena, você errou!");
+                
+            }
+            numeroChutado.value = "";
+            numeroChutado.focus();
+        }
+        
+        var numeroPensado, numeroChutado, tentativas, maxTentativas, acertou, button;
+        
+        maxTentativas = 3;
+        numeroPensado = sorteia(10);
+        console.log(numeroPensado);
+        
+        //Chamando as funções
+        numeroChutado = document.querySelector("input");
+        numeroChutado.focus();
+        button = document.querySelector("button");
+        button.onclick = verificaNumero;
+        
+	</script>
+</html>

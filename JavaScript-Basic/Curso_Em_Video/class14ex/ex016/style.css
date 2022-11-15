@@ -1,0 +1,38 @@
+body{
+  background-color: rgb(70,142,236);
+  font: normal 15pt Arial;
+}
+
+header{
+  color: white;
+  text-align: center;
+}
+
+section{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.400);
+  margin: 0 auto;
+  padding: 15px;
+  width: 500px;
+}
+
+p{
+  margin-top: 0;
+}
+.txt__num{
+  width: 3.75rem;
+}
+
+#start__button{
+  font-size: 0.9rem;
+  margin-bottom: 4%;
+  padding: 0.2rem 1rem;
+}
+
+footer{
+  color:white;
+  font-style: italic;
+  margin-top: 2%;
+  text-align: center;
+}

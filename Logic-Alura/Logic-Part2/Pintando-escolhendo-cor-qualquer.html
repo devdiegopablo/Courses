@@ -1,0 +1,36 @@
+<meta charset="utf-8">
+
+<canvas width="600" height="400"></canvas>
+<br>
+<p>Escolha uma cor </p><input type="color">
+
+<script>
+    var corEscolhida = document.querySelector('input');
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var desenhar = false;
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    tela.onmousedown = function (){ 
+        desenhar = true;
+    }
+    tela.onmouseup = function (){
+        desenhar = false;
+    }
+
+    tela.onmousemove = function (evento) {
+        if(desenhar){
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = corEscolhida.value;
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+        console.log(corEscolhida);
+
+    }
+
+</script>

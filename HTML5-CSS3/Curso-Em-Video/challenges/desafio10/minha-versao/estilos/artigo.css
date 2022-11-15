@@ -1,0 +1,19 @@
+/*Estilo da seção artigo*/
+.artigo {
+    padding: 20px;
+}
+
+.artigo-titulo-principal {
+    font-family: 'idroid', Arial, sans-serif;
+    font-size: 2em;
+    color: #1A5C38;
+    margin: 0;
+}
+
+.artigo-subtitulo {
+    font-family: 'idroid', Arial, sans-serif;
+    font-size: 1.5em;
+    color: #1A5C38;
+    background-image: linear-gradient(to right, #C6EBD6, #c6ebd616);
+    margin: 0;
+}

@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>Analisando time</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+
+		function pulaLinha(){
+            
+            document.write("<br>");
+            
+        }
+        
+        function mostra(texto){
+
+			document.write(texto);
+			pulaLinha();
+
+		}
+        
+		var nomeTime, vitoria, empate, pontos, pontosAnoPassado;
+        
+        mostra("<h3><u>Desempenho do Time</u></h3>");
+        
+        nomeTime = prompt("Qual o nome do time?");
+        vitoria = parseInt(prompt("Quantas vitórias ele obteve"));
+        empate = parseInt(prompt("Quantos empates ele fez?"));
+        
+        pontos = vitoria * 3 + empate
+        
+        mostra(nomeTime + " fez " + pontos + " pontos.");
+        
+        pontosAnoPassado = 20
+        
+        if(pontos<pontosAnoPassado){
+            mostra("O desempenho do time foi pior do que o ano passado.");   
+        }
+        if(pontos>pontosAnoPassado){
+            mostra("O desempenho do time foi melhor do que o ano passado.");   
+        }
+        if(pontos==pontosAnoPassado){
+            mostra("O time obteve o mesmo desempenho do ano passado");
+        }
+
+	</script>
+</html>

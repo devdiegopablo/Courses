@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Primeiro programa</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+
+		function mostra(texto){
+
+			document.write(texto);
+			document.write("<br>");
+
+		}
+		
+		var ano, media, nome, idadeFlavio, idadeJoaquim, idadeBarney;
+
+		ano = 2016
+
+		mostra("Flávio tem " + (ano - 1977) + " anos");
+
+    	mostra("Joaquim tem " + (ano - 1996) + " anos");
+    	
+    	ano = 2017;
+
+    	mostra("Barney tem " + (ano - 1976) + " anos");
+
+    	idadeFlavio = 39;
+    	idadeJoaquim = 20;
+    	idadeBarney = 41;
+
+    	media = (idadeFlavio+idadeJoaquim+idadeBarney)/3;
+
+    	mostra("A média das idades mencionadas é " + Math.round(media));
+
+    	nome = "Flávio";
+
+    	mostra("Meu nome é " + nome + " e tenho " + idadeFlavio + " anos.");
+
+	</script>
+</html>

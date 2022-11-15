@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiplication Table X</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Multiplication table</h1>
+  </header>
+  <section>
+    <div class="forms">
+      <p>Type a number: 
+        <input type="number" name="numTxt" id="numTxt"> 
+        <input type="button" value="Generate table" id="button__Generator" onclick="generateTable()">
+      </p>
+    </div>
+    <div class="forms">
+      <textarea id="text-box" cols="14" rows="11" disabled></textarea> <!--Em minha versão usei a tag textarea com tamanho fixo pelo CSS e texto pelo JS-->
+    </div>
+  </section>
+  <footer>
+    <p>&copy;Exercício feito com a ajuda do CursoEmVídeo</p>
+  </footer>
+  <script src="exercise.js"></script>
+</body>
+</html>

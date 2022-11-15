@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+    var desenhar = false;
+
+    pincel.fillStyle = 'grey';
+    pincel.fillRect(0, 0, 600, 400);
+
+    /*Abaixo esta a forma correta de se usar uma função anônima, pois você joga toda a função dentro do objeto "tela.onmousedown". O mesmo é aplicado no onmouseup e onmousemove*/
+
+    tela.onmousedown = function (){ //habilita o modo desenhar
+        desenhar = true;
+    }
+    tela.onmouseup = function (){//desabilita o modo desenhar
+        desenhar = false;
+    }
+
+    tela.onmousemove = function (evento) {//desenha com o mouse no canvas se o modo desenhar estiver habilitado
+        if(desenhar){
+            var x = evento.pageX - tela.offsetLeft;
+            var y = evento.pageY - tela.offsetTop;
+            pincel.fillStyle = 'blue';
+            pincel.beginPath();
+            pincel.arc(x, y, 10, 0, 2 * 3.14);
+            pincel.fill();
+        }
+        console.log(desenhar);
+
+    }
+
+</script>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jogo dos chutes</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+
+		function pulaLinha(){
+            
+            document.write("<br>");
+            
+        }
+        
+        function mostra(texto){
+
+			document.write(texto);
+			pulaLinha();
+
+		}
+        
+		function sorteia(numero){
+            return Math.round(Math.random()*numero);
+        }
+        
+        var numeroPensado, numeroChutado, tentativas, maxTentativas, acertou = false;
+        
+        maxTentativas = 3;
+        numeroPensado = sorteia(10);
+        console.log(numeroPensado);
+        
+        numeroChutado = parseInt(prompt("Chute digitando um número de 1 a 10:"));
+        
+        while(numeroChutado<1 || numeroChutado>10){
+            alert("Chute um valor valido!");
+            numeroChutado = parseInt(prompt("Chute digitando um número de 1 a 10:"));
+        }
+        if(numeroChutado==numeroPensado){
+            mostra("Parabéns! você acertou de primeira!");
+            acertou = true;
+        }else{
+            for(tentativas=1; tentativas<maxTentativas; tentativas++){
+                alert("Você errou, mas ainda tem " + (maxTentativas-tentativas) + " chance(s).");
+                numeroChutado = parseInt(prompt("Chute digitando um número de 1 a 10:"));
+                if(numeroChutado==numeroPensado){
+                    acertou = true;
+                    mostra("Muito bom! você acertou!");
+                    break;
+                }  
+            }
+        }
+        if(acertou == false){
+            mostra("Infelizmente você perdeu.");
+        }
+
+	</script>
+</html>

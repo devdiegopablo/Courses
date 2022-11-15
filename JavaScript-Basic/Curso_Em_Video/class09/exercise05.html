@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concenito iniciais de DOM</title>
+    <style>
+        body {
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1 name="titulo1">Iniciando Estudos com DOM</h1>
+    <p class="paragrafo1">Aqui vai o resultado</p>
+    <p class="paragrafo1">Testando classes</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JS.</p>
+    <div id="message">Clique em mim</div>
+    <div class="selecao">Testando querySelector em JS</div>
+</body>
+<script>
+    let corpo = document.body;
+    let paragrafo = document.getElementsByTagName('p')[1]; //Pega os elementos do site pela tag. Quando tem múlitplas tags use [] com número a partir do índice 0.
+    let mensagem = document.getElementById('message'); //Neste pega o elemento pela id
+    let titulo01 = document.getElementsByName('titulo1')[0]; //Aqui ele pega pela tag com o atributo name nela
+    let par1 = document.getElementsByClassName('paragrafo1')[0];//Neste caso ele pega o elemento pelo nome de sua classe. É necessário ter mais de um elemento com a mesma classe
+    let selec = document.querySelector('div.selecao');//Seleciona um elemento pelo seletor do CSS que pode ser # para id ou . para classe
+    
+    window.document.write(paragrafo.innerHTML); //object.innerText puxa o texto do elemento selecionado. O innerHTML puxa também o HTML interno deste elemento.
+    corpo.style.backgroundColor = "darkgreen";
+    mensagem.style.backgroundColor = 'black';
+    titulo01.style.fontFamily = 'sans-serif';
+    par1.style.fontSize = '28pt';
+    selec.style.textDecoration = 'underline';
+</script>
+</html>

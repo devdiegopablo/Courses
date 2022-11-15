@@ -1,0 +1,6 @@
+/*Estilo da função do colaborador*/
+.pessoa__funcao {
+    color: #595959;
+    text-transform: lowercase;
+    font-size: 1.25rem;
+}

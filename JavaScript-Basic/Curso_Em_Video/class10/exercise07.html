@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Interactions</title>
+    <style>
+        input{
+            margin-right: 0.2%;
+            margin-left: 0.2%;
+            text-align: center;
+            width: 50px;
+        }
+        .botao_soma{
+            margin: 0.5% 4.5%;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Adding Numbers</h1>
+    <p>Número 1 <input type="number" name="texto1" id="texto1"> + &nbsp; Número 2 <input type="number" name="texto2" id="texto2"></p>
+    <input type="button" value="Somar" class="botao_soma" onclick="somatorio()">
+    <p>O resultado da soma é <input type="text" name="resultado" id="resultado" disabled></p>
+    <script>
+        function somatorio(){
+            let txt1 = document.getElementById('texto1');
+            let txt2 = document.getElementById('texto2');
+            let txtResultado = document.querySelector('input#resultado');
+            let num1 = Number(txt1.value); //"Number" converte o tipo string em number(seja inteiro ou real). "object.value" capta o valor do objeto selecionado
+            let num2 = Number(txt2.value);
+            let resultado = num1 + num2;
+            txtResultado.value = resultado;
+        }
+    </script>
+</body>
+</html>

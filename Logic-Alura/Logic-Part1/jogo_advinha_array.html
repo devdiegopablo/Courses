@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jogo dos Chutes com Array</title>
+		<meta charset="utf-8">
+        <style>
+        
+            body{
+                text-align: center;
+                background-color: dimgrey;
+                color: aliceblue;
+            }
+        
+        </style>
+	</head>
+	<body>
+		<h3>Jogo de adinhação</h3>
+        <p>Chuta um número de 1 até 10 para saber qual estou pensando.</p>
+        <p>Digite o número no quadro abaixo:</p>
+        <input>&nbsp;&nbsp;<button>Verificar Número</button>
+	</body>
+	<script type="text/javascript">
+
+		function pulaLinha(){
+            
+            document.write("<br>");
+            
+        }
+        
+        function mostra(texto){
+
+			document.write(texto);
+
+		}
+        
+		function sorteiaArray(tamanho){
+            var conjuntoNumeros = [], contador1=0, contador2, numeroAleatorio, adiciona;
+
+
+            while(contador1<tamanho){
+                
+                numeroAleatorio = Math.round(Math.random()*10);
+                adiciona = true;
+
+                if(numeroAleatorio!=0){
+
+                    for(contador2=0; contador2<conjuntoNumeros.length; contador2++){
+                        if(numeroAleatorio==conjuntoNumeros[contador2]){
+                            adiciona = false;
+                            break;
+                        }
+
+                    }
+
+                    if(adiciona == true){
+                        conjuntoNumeros.push(numeroAleatorio);
+                        contador1++;
+                    }
+
+                }
+                
+            }
+            return conjuntoNumeros;
+
+        }
+        
+        function verificaNumero(){
+            if(numeroChutado.value<1 || numeroChutado.value>10){
+                alert("Valor inválido!");
+                numeroChutado.value = "";
+                numeroChutado.focus();
+            }else{
+                verificaSegredo();
+            }
+            
+        }
+        
+        function verificaSegredo(){
+
+            acertou = false;
+
+            for(contador=0; contador<numerosPensados.length; contador++){
+
+                if(numeroChutado.value==numerosPensados[contador]){
+                    acertou = true;
+                    alert("Parabéns, você acertou!");
+                    break;
+                }
+            }
+            
+            if(acertou == false){
+                alert("Infelizmente você errou.");
+            }
+
+            numeroChutado.value = "";
+            numeroChutado.focus();
+        }
+        
+        var numerosPensados, numeroChutado, contador, acertou, button;
+        //gerando array
+        numerosPensados = sorteiaArray(4);
+        
+        //Chamando as funções
+        numeroChutado = document.querySelector("input");
+        numeroChutado.focus();
+        button = document.querySelector("button");
+        button.onclick = verificaNumero;
+        
+	</script>
+</html>

@@ -1,0 +1,33 @@
+body{
+  background-color: rgb(70,142,236);
+  font: normal 13pt Arial;
+}
+
+header{
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+section{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.400);
+  margin: 0 auto;
+  padding: 15px;
+  width: 500px;
+}
+
+#dat-nasc {
+  width: 60px;
+}
+
+#botao-verificar{
+  width: 70px;
+  height: 30px;
+}
+footer{
+  color:white;
+  font-style: italic;
+  text-align: center;
+}

@@ -1,0 +1,70 @@
+/*para telas de 940px até 490px*/
+@media screen and (max-width: 940px){
+    .menu {
+        position: static;
+        text-align: center;
+    }
+    .subtitulo {
+        font-size: 1.3em;
+        width: 70%;
+     }
+
+    .conteudo-principal {
+        width: auto;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+
+    .video-conteudo {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+/*para telas com 480px abaixo*/
+@media screen and (max-width: 480px) {
+    .titulo-principal{
+        font-size: 2em;
+    }
+    .cabecalho {
+         width: auto;
+     }
+
+     .menu {
+        position: static;
+        text-align: center;
+    }
+
+    .menu-lista {
+        padding: 0;
+        margin: 40px auto 0 auto;
+    }
+
+    .menu-items {
+        font-size: 0.8em;
+        padding: 5px 7px;
+    }
+
+    .subtitulo {
+        font-size: 0.8em;
+        width: 90%;
+     }
+    
+     .conteudo-principal {
+        width: auto;
+        background-color: white;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .video {
+        background-color: #1A5C38;
+        padding: 10px 0;
+    }
+    
+    .video-conteudo {
+        width: 95%;
+        margin-left: 2.5%;
+    }
+ }

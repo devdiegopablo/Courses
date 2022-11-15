@@ -1,0 +1,15 @@
+/*exercises grid style*/
+.grid {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  background-color: green;
+  color: white;
+  height: 50px;
+  margin: 1%;
+  text-align: center;
+  width: 20%;
+}

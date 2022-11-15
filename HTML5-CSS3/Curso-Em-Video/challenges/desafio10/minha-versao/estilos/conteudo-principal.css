@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'idroid';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.conteudo-principal {
+    width: 60%;
+    margin: 0 auto;
+    background-color: white;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.conteudo-paragrafo {
+    text-indent: 20px;
+    text-align: justify;
+}
+
+.conteudo__imagem {
+   width: 100%;
+}
+
+.conteudo__imagem--bugdroid {
+    display: block;
+    margin: 0 auto;
+    width: 35%;
+}
+
+.enfase {
+    font-weight: bold;
+    color:#1A5C38;
+}
+
+.enfase-com-link{
+    font-weight: bold;
+    text-decoration: none;
+    color:#1A5C38;
+    background-color: #C5EBD6;
+}
+
+.enfase-com-link:hover {
+    text-decoration: underline;
+}
+
+.enfase-com-link::after {
+    content: '\1F517';
+}
+
+/*Estilo da seção vídeo*/
+.video {
+    background-color: #1A5C38;
+    padding: 15px 0;
+}
+
+.video-conteudo {
+    margin-left: 10%;
+}

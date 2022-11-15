@@ -1,0 +1,47 @@
+<meta charset="utf-8">
+
+<canvas width="800" height="600"></canvas>
+
+<script>
+    /*Declaração das funções*/
+    function desenhaCirculo(x, y, raio, cor) {
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+
+    }
+    function limpaTela() {
+        pincel.clearRect(0, 0, 800, 600);
+    }
+    function desenhaAlvo(x, y){
+        desenhaCirculo(x, y, raio+20, 'red');
+        desenhaCirculo(x, y, raio+10, 'white');
+        desenhaCirculo(x, y, raio, 'red');
+    }
+    function alvoAleatorio(){
+        limpaTela();
+        xAleatorio = Math.floor(Math.random()*600);//Similar ao Math.round, mas ele arredonda para baixo (floor)
+        yAleatorio = Math.floor(Math.random()*400);
+        desenhaAlvo(xAleatorio,yAleatorio);
+    }
+    /*Programa principal*/
+    const tela = document.querySelector('canvas');
+    const pincel = tela.getContext('2d');
+    let raio = 10;
+    let xAleatorio;
+    let yAleatorio;
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 800, 600);
+
+    setInterval(alvoAleatorio, 1000);
+    tela.onclick = function (evento){
+        let x = evento.pageX - tela.offsetLeft;
+        let y = evento.pageY - tela.offsetTop;
+        if((x>xAleatorio - raio) && (x<xAleatorio+raio) && (y>yAleatorio-raio) && (y<yAleatorio+raio)){ //Verifica se a posição do clique do mouse está na posição do alvo desenhado
+            alert("Acertou!");
+        }
+    }
+    
+</script>

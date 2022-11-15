@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Anos das copas passadas</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		
+	</body>
+	<script type="text/javascript">
+
+		function pulaLinha(){
+            
+            document.write("<br>");
+            
+        }
+        
+        function mostra(texto){
+
+			document.write(texto);
+
+		}
+        
+        var primeiraCopa, anoAtual;
+        
+        anoCopa = 1930;
+        anoAtual = parseInt(prompt("Qual o ano atual?"));
+        
+		mostra("Os anos da copa foram: ")
+        pulaLinha();
+        while(anoCopa<=anoAtual){
+            mostra(anoCopa + " - ");
+            anoCopa = anoCopa + 4;
+        }
+        
+	</script>
+</html>

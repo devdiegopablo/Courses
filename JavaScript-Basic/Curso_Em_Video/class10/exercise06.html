@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Events</title>
+    <style>
+        #area{
+            font: normal 20pt Arial;
+            background-color: rgb(46, 141, 46);
+            color: white;
+            height: 200px;
+            line-height: 200px;
+            text-align: center;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!--onclick="clicar()", onmouseenter="entradaMouse()" e onmouseout="saidaMouse()" é uma das formas de chamar eventos DOM do JS dentro do HTML-->
+    <div id="area">Interaction...</div>
+    <script>
+        let areaInteragivel = document.getElementById('area');
+        areaInteragivel.addEventListener('click', clicar); //addEventListener('tipo de eveto', função), chama um evento DOM do JS
+        areaInteragivel.addEventListener('mouseover', entradaMouse);
+        areaInteragivel.addEventListener('mouseout', saidaMouse);
+
+        function clicar(){ 
+            areaInteragivel.innerText = 'Click!';
+            areaInteragivel.style.fontSize = '40pt';
+            areaInteragivel.style.fontWeight = 'bolder';
+        }
+        function entradaMouse(){
+            areaInteragivel.innerText = 'mouse detected';
+            areaInteragivel.style.backgroundColor = 'rgb(29, 94, 29)';
+        }
+        function saidaMouse(){
+            areaInteragivel.innerText = 'Interaction...';
+            areaInteragivel.style.backgroundColor = 'rgb(46, 141, 46)';
+            areaInteragivel.style.fontWeight = 'normal';
+            areaInteragivel.style.fontSize = '20pt';
+        }
+    </script>
+</body>
+</html>

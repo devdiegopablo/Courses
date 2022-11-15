@@ -1,0 +1,70 @@
+/*Adição da fonte Montserrat no site*/
+body {
+   font-family: 'Montserrat', sans-serif;
+}
+
+/*estilo do cabeçalho*/
+header {
+   background: #BBBBBB;
+   padding: 20px 0;
+   margin-bottom: 5px;
+}
+
+.caixa {
+   width: 940px;
+   position: relative;
+   margin: 0 auto;
+}
+
+nav {
+   position: absolute;
+   top: 110px;
+   right: 0;
+}
+
+nav li {
+   display: inline;
+   margin: 0 0 0 15px;
+}
+
+nav a {
+   text-transform: uppercase;
+   color: #000000;
+   font-size: 22px;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+nav a:hover {
+   color: #836FFF;
+   text-decoration: underline;
+}
+
+/*Estilo do rodapé*/
+footer {
+   text-align: center;
+   background: url("../imagens/bg.jpg");
+   padding: 40px 0;
+}
+
+.copyright {
+   color: #FFFFFF;
+   font-size: 13px;
+   margin: 20px 0 0;
+}
+
+/*Estilo sendo adpatado para smartphones e tablets*/
+@media screen and (max-width: 940px) {
+   .caixa {
+		width: auto;
+		margin: 0 1em;
+	}
+	h1 {
+		text-align: center;
+	}
+	
+	nav {
+		position: static;
+		text-align: center;
+	}
+}

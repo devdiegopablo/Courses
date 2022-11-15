@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fui Multado?</title>
+    <style>
+        body{
+            background-color: rgb(51, 51, 51);
+            color: white;
+        }
+        h1{
+            font: bold 20px Arial;
+        }
+        #velocidade{
+            text-align: center;
+            width: 50px;
+        }
+        .botao{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Velocidade atual do carro</h1>
+    <p>Digite a velocidade atual do seu veículo abaixo:</p>
+    <input type="number" name="velocidade" id="velocidade">
+    <input type="button" value="Fui multado seu guarda?" class="botao" onclick="veredito()">
+    <div class="resposta"> </div>
+    
+    <script>
+        const texto = document.querySelector('input#velocidade');
+        const resposta = document.querySelector('div.resposta');
+        function veredito(){
+            const velocidadeCarro = Number(texto.value);
+            if(velocidadeCarro>50){
+                resposta.style.marginTop = '1%';
+                resposta.innerHTML = 'Lamento, você foi <strong>multado</strong> por excesso de velocidade.';
+            }else{
+                resposta.style.marginTop = '1%';
+                resposta.innerText = 'Sem problemas você está na velocidade permitida.';
+            }
+            resposta.innerHTML += '<p>Dirija sempre com segurança</p>'; //Quando for string o "+=" não incrementa, mas concatena como neste caso o texto acima
+        }
+    </script>
+
+</body>
+</html>

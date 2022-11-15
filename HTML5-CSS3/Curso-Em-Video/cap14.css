@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+@font-face {
+    font-family:'Love Larry';
+    src: url('fonts/love-larry.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Kaushan Script', cursive;
+    height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #D5DDE6, #93BFEA);
+    
+}
+
+p {
+    text-align: justify;
+}
+
+h1 {
+    color: #6A6E72;
+    text-align: center;
+    text-shadow: 1px 1px 1px #585b5f93
+}
+
+h2 {
+    font-family: 'Love Larry', arial, sans-serif;
+    font-weight: normal;
+    color: #A6ACB3;
+}
+
+ main {
+    height: auto;
+    background-color: white;
+    width: 50%;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 5px 5px 15px #4798e9b7;
+    border-radius: 7px;
+ }
