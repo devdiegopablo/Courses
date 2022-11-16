@@ -26,7 +26,7 @@ for(index in numbers){ //Este "for" em JS só funciona em arrays e objects
   console.log(`O valor ${numbers[index]} está na posição ${index}.`);
 }
 
-//A função indexOF() pesquisa o valor no array, se ele encontrar, a função retorna o index do array, se não encontrar, ele retorna -1
+//A função indexOf() pesquisa o valor no array, se ele encontrar, a função retorna o index do array, se não encontrar, ele retorna -1
 if(numbers.indexOf(6)>=0){
   console.log(`O valor pesquisado se encontra no array e está na posição ${numbers.indexOf(6)}`);
 }else{

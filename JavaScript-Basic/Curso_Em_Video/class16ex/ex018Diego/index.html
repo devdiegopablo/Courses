@@ -4,22 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Multiplication Table X</title>
+  <title>Numbers analyzer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Multiplication table</h1>
+    <h1>Numbers analyzer</h1>
   </header>
   <section>
     <div class="forms">
-      <p>Type a number: 
+      <p>Type a number (from 1 to 100): 
         <input type="number" name="numTxt" id="numTxt"> 
-        <input type="button" value="Generate table" id="button__Generator" onclick="generateTable()">
+      </p>
+      <p>
+        <input type="button" value="Add number" class="button" >
+        <input type="button" value="Show my numbers" class="button">
+        <input type="button" value="Analyze" class="button">
       </p>
     </div>
     <div class="forms">
-      <textarea id="text-box" cols="14" rows="11" disabled></textarea> <!--Em minha versão usei a tag textarea com tamanho fixo pelo CSS e texto pelo JS-->
+      <textarea id="text-box" cols="40" rows="5" disabled></textarea> <!--Em minha versão usei a tag textarea com tamanho fixo pelo CSS e texto pelo JS-->
     </div>
   </section>
   <footer>

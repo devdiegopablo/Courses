@@ -1,0 +1,42 @@
+body{
+  background-color: rgb(70,142,236);
+  font-family: Arial;
+}
+
+header{
+  color: white;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+section{
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.400);
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 15px;
+  width: 500px;
+}
+
+#numTxt{
+  width: 3.75rem;
+}
+
+.button{
+  margin-left: 1%;
+}
+
+.forms{
+  text-align: center;
+}
+
+#text-box {
+  resize: none;
+}
+
+footer{
+  color:white;
+  font-style: italic;
+  text-align: center;
+}
