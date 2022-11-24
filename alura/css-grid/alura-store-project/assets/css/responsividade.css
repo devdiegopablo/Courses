@@ -1,0 +1,114 @@
+@media screen and (min-width: 0){
+  .cabecalho{
+    font-size: .8rem;
+    justify-content: center;
+  }
+  .menu__link{
+    padding: .5rem .5rem;
+  }
+  .destaques{
+    grid-template-columns: 25% 25% 25% 20%;
+
+  }
+  .destaques__principal, .destaques__categorias{
+    grid-column: 1/5;
+  }
+  .destaques__secundario:nth-child(2){
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
+  .destaques__secundario:nth-child(3){
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
+  .destaques__secundario:nth-child(4){
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
+  .destaques__secundario:nth-child(5){
+    display: none;
+    grid-column: none;
+    grid-row: none;
+  }
+  .destaques__categorias___link, .populares__titulo, .populares__botao{
+    font-size: .8rem;
+  }
+  
+  .populares__conteudo{
+    flex-direction: column;
+  }
+  .populares__card{
+    margin-bottom: 2rem;
+    margin-right: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .cabecalho{
+    font-size: initial;
+    justify-content: flex-start;
+  }
+  .menu__link{
+    padding: .5rem 1rem;
+  }
+  .destaques{
+    grid-template-columns: 25% 25% 25% 24%;
+
+  }
+  .destaques__principal{
+    grid-column: 1/4;
+  }
+  .destaques__secundario:nth-child(2){
+    display: flex;
+    grid-column: 4/ 4;
+    grid-row: 1 / 1;
+  }
+  .destaques__secundario:nth-child(3){
+    display: flex;
+    grid-column: 4 / 4;
+    grid-row: 2 / 2
+  }
+  .destaques__secundario:nth-child(4){
+    display: flex;
+    grid-column: 4 / 4;
+    grid-row: 3 / 3;
+  }
+  .destaques__secundario:nth-child(5){
+    display: flex;
+    grid-column: 3 / 3;
+    grid-row: 3 / 3;
+  }
+  .destaques__categorias{
+    grid-column: 1 / 3;
+  }
+  .destaques__categorias___link, .populares__titulo, .populares__botao{
+    font-size: initial;
+  }
+  .populares__conteudo{
+    flex-direction: row;
+  }
+  .populares__card{
+    margin-bottom: 2rem;
+    margin-right: .5rem;
+    margin-left: .5rem;
+    width: calc(50% - 1rem);
+  }
+}
+
+@media screen and (min-width: 990px){
+  .populares__card{
+    margin-bottom: 2rem;
+    width: calc(33.33% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .populares__card{
+    margin-bottom: 0;
+    width: calc(20% - 1rem);
+  }
+}
