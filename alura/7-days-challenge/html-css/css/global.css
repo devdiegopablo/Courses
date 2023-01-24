@@ -1,0 +1,14 @@
+:root{
+    --border-color: #EAECF0;
+    --footer-background: #F9FAFB;
+    --copyright-color: #98A2B3;
+    --main-red-color: #8E2424;
+    --main-text-color: #101828;
+    --main-text-font: 'Inter', sans-serif;
+    --paragraph-color: #667085;
+    --red-color-transparency: #8E24240D;
+}
+
+*{
+    font-family: var(--main-text-font);
+}

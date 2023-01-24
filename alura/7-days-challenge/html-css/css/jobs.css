@@ -1,0 +1,42 @@
+.jobs{
+  display:flex;
+  flex-direction: column;
+  height: 940px;
+  justify-content: space-evenly;
+  padding: 0 20%;
+  
+}
+
+.jobs__title{
+  color: var(--main-text-color);
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.875rem;
+}
+
+.title__container{
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 136px;
+  justify-content: space-between;
+  padding: 24px;
+}
+
+.title__container__subtitle{
+  color: var(--main-text-color);
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+}
+
+.title__container__text{
+  color: var(--paragraph-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.title__container__text span{
+  margin-right: 1.5rem;
+}

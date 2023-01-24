@@ -1,0 +1,31 @@
+.top-header{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 407px;
+    justify-content: center;
+}
+
+.top-header__subtitle{
+    color: var(--main-red-color);
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+}
+
+.top-header__title{
+    color: var(--main-text-color);
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.75rem;
+}
+
+.top-header__paragraph{
+    color: var(--paragraph-color);
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+    padding: .75rem 0 0;
+    text-align: center;
+    width: 790px;
+}

@@ -1,0 +1,52 @@
+.footer-form{
+  align-items: center;
+  background-color: var(--footer-background);
+  display: flex;
+  flex-direction: column;
+  height: 430px;
+  justify-content: space-around;
+  padding: 96px 0;
+  width: 100%;
+}
+
+.form__title{
+  color: var(--main-text-color);
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 2.75rem;
+}
+
+.form__paragraph{
+  color: var(--paragraph-color);
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+}
+
+.form__input{
+  display: block;
+}
+
+#register{
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  color: var(--paragraph-color);
+  font-size: 1rem;
+  height: 48px;
+  padding: 10px;
+  width: 350px;
+}
+
+.form__submit-button{
+  border: none;
+  border-radius: 5px;
+  background-color: var(--main-red-color);
+  color: #ffffff;
+  margin-left: 16px;
+  padding: 15px 20px;
+}
+
+.footer__copyright{
+  color: var(--copyright-color);
+  font-size: 1rem;
+  line-height: 1.5rem;
+}

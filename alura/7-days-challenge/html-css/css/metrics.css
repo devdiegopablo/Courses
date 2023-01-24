@@ -1,0 +1,30 @@
+.metrics{
+    display: flex;
+    height: 288px;
+    justify-content: space-evenly;
+    padding: 0 3rem;
+}
+
+.metrics__column{
+    max-width: 280px;
+}
+
+.columns__title{
+    color: var(--main-red-color);
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: 4.5rem;
+}
+
+.columns__subtitle{
+    color: var(--main-text-color);
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.columns__paragraph{
+    color: var(--paragraph-color);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}

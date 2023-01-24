@@ -1,0 +1,33 @@
+.hire{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 670px;
+  justify-content: space-around;
+
+}
+
+.hire__subtitle{
+  background-color: var(--red-color-transparency);
+  border-radius: .94rem;
+  color: var(--main-red-color);
+  font-size: 0.875rem;
+  font-weight: 500;
+  padding: .31rem .94rem;
+}
+
+.hire__title{
+  color: var(--main-text-color);
+  font-size: 2.25rem;
+  font-weight: 600;
+}
+
+.hire__paragraph{
+  color: var(--paragraph-color);
+  font-size: 1.25rem;
+}
+
+.hire__image{
+  padding: 2rem 0;
+  width: 75%;
+}
