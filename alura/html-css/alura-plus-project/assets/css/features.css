@@ -1,0 +1,38 @@
+.features{
+  display: grid;
+  grid-template-columns: 40% 50% 10%;
+  align-items: center;
+  padding: 0 11rem;
+  margin-bottom: 5rem;
+}
+
+.features--secondary{
+  grid-template-columns: 40% 5% 55%;
+  margin-bottom: 6rem;
+}
+
+.description__title{
+  color: var(--main-text-color);
+  font: 700 3rem var(--main-font-text);
+  margin-bottom: 0.63rem;
+}
+
+.description__paragraph{
+  color: var(--main-paragraph-color);
+  font: 400 1rem/1.5rem var(--main-font-text);
+  padding: 0 2rem 0 0;
+}
+
+.features__image{
+  width: 85%;
+}
+
+.features__image--secondary{
+  grid-column: 3/3;
+  width: 75%;
+}
+
+.main__button--features{
+  display: inline-block;
+  margin: .8rem 0 0 0;
+}

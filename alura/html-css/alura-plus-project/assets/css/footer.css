@@ -1,0 +1,28 @@
+.footer{
+  text-align: center;
+}
+
+.footer__navigation{
+  margin: 2rem 0 2rem 0;
+}
+
+.navigation__link{
+  color: var(--main-text-color);
+  font: 400 1rem/1.5rem var(--main-font-text);
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.navigation__link:hover{
+  text-decoration: underline;
+}
+
+.footer__paragraph{
+  color: var(--disclaimer-footer-color);
+  font: 400 0.875rem/1.31rem var(--main-font-text);
+  margin-bottom: 1rem; 
+}
+
+.footer__paragraph:last-child{
+  margin-bottom: 2rem;
+}

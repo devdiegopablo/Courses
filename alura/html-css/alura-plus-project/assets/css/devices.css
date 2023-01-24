@@ -1,0 +1,19 @@
+.devices{
+  text-align: center;
+}
+
+.devices__container{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3rem 0 9.06rem 0;
+}
+
+.devices__title{
+  color: var(--main-text-color);
+  font: 700 3rem/3.6rem var(--main-font-text);
+}
+
+.devices__figure figcaption{
+  color: var(--main-text-color);
+  font: 700 2rem/2.4rem var(--main-font-text);
+}

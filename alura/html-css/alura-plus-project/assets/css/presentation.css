@@ -1,0 +1,26 @@
+.presentation{
+  background: url("../imgs/Background.png") center/contain no-repeat;
+  display: grid;
+  grid-template-columns: 12% 30% 58%;
+  grid-template-rows: 25% 75%;
+  height: 100vh;
+}
+
+.presentation div{
+  grid-area: 2/2/2/2;
+  text-align: center;
+}
+
+.presentation__title{
+  color: var(--main-text-color);
+  font: 700 1.75em var(--main-font-text);
+}
+
+.presentation__logo{
+  margin: 2rem 0 3rem 0;
+}
+
+.presentation__disclaimer{
+  color: var(--disclaimer-footer-color);
+  font: 400 .75rem var(--main-font-text);
+}
